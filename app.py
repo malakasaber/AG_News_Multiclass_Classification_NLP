@@ -5,6 +5,8 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
+nltk.download('stopwords', quiet=True)
+
 # ---- Load models & vectorizer ----
 lr_model = joblib.load("models/logistic_model.pkl")
 svm_model = joblib.load("models/svm_model.pkl")     
